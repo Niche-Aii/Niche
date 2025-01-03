@@ -1,0 +1,14 @@
+
+---
+
+### `docker-compose.yml`
+
+```yaml
+version: '3.8'
+services:
+  niche_aii:
+    build: .
+    container_name: niche_aii_container
+    command: python src/main.py
+    volumes:
+      - .:/app
